@@ -1,0 +1,44 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace = "com.example.progenuisadmin"  // Ensure the namespace is set correctly
+    compileSdk = 35  // Keep this up-to-date with the latest SDK
+
+    ndkVersion = flutter.ndkVersion  // Ensure correct NDK version
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8  // Java 8 compatibility
+        targetCompatibility = JavaVersion.VERSION_1_8  // Java 8 compatibility
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8  // Kotlin JVM target compatibility
+    }
+
+    defaultConfig {
+        applicationId = "com.example.progenuisadmin"  // Your unique application ID
+        minSdk = 21  // Minimum SDK version
+        targetSdk = 35  // Ensure this matches your compileSdkVersion
+        versionCode = flutter.versionCode  // Automatically generated version code
+        versionName = flutter.versionName  // Automatically generated version name
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.debug  // Use debug signing for now
+            minifyEnabled false  // Disable code shrinking
+            shrinkResources false  // Do not shrink resources
+        }
+    }
+
+    // Additional configurations or settings can go here if needed.
+}
+
+flutter {
+    source = "../.."  // Path to your Flutter project
+}
