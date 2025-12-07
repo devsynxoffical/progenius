@@ -1,8 +1,8 @@
 class ApiUrls{
 
   // static const baseUrls = "https://api.progeniusstudents.com/v1";
-  static const baseUrls = "http://10.0.2.2:8000/v1"; // Use 10.0.2.2 for Android Emulator, localhost for iOS/Web
-  static const file = "${baseUrls}/file/";
+  static const baseUrls = "https://progenius-backend-production.up.railway.app/v1";
+  static const file = "${baseUrls}/file";
 
 
   // STUDENT 

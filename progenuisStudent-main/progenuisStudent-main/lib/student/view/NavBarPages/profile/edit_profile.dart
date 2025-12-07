@@ -86,7 +86,7 @@ class EditProfilePage extends StatelessWidget {
                           // ✅ Check if profile data is available before accessing properties
                           if (profile != null && profile.profileImage != null && profile.profileImage!.isNotEmpty) {
                             // ✅ Construct Correct Image URL
-                            imageUrl = '${ApiUrls.file}${profile.destination}${profile.profileImage}';
+                            imageUrl = '${ApiUrls.file}/${profile.destination}${profile.profileImage}';
                             print("Profile Image URL: $imageUrl"); // ✅ Debugging output
                           }
 

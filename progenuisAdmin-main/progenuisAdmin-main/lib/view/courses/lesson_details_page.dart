@@ -158,7 +158,7 @@ class LessonContentPage extends StatelessWidget {
                             context,
                             MaterialPageRoute(
                               builder: (context) => PdfViewerPage(
-                                pdfUrl: "${ApiUrls.file}${pdf.destination}/${pdf.file}",
+                                pdfUrl: "${ApiUrls.file}/${pdf.destination}/${pdf.file}",
                               ),
                             ),
                           );

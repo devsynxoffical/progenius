@@ -69,7 +69,7 @@ class LessonContentPage extends StatelessWidget {
             if (lesson.pdfs!.isNotEmpty)
               SectionTitle(title: 'PDF Notes'),
             ...lesson.pdfs!.map((pdf) {
-              String pdfUrl = "${ApiUrls.file}${pdf.destination}/${pdf.file}";
+              String pdfUrl = "${ApiUrls.file}/${pdf.destination}/${pdf.file}";
 
               // Save PDF URL
               pdfUrls.add(pdfUrl);

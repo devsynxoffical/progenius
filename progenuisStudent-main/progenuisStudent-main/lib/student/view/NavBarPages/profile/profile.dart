@@ -64,7 +64,7 @@ class ProfilePage extends StatelessWidget {
                         child: ClipOval(
                           child: profile.profileImage != null && profile.profileImage!.isNotEmpty
                               ? CachedNetworkImage(
-                                  imageUrl: '${ApiUrls.file}${profile.destination}${profile.profileImage!}',
+                                  imageUrl: '${ApiUrls.file}/${profile.destination}${profile.profileImage!}',
                                   placeholder: (context, url) => CircularProgressIndicator(), // Show loader while loading
                                   errorWidget: (context, url, error) => Image.asset('assets/logo1.png'), // Fallback on error
                                   fit: BoxFit.cover, // Ensures the image fits within the circle
