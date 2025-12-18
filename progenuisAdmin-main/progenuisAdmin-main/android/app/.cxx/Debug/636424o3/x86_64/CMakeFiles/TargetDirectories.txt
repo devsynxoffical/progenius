@@ -1,2 +1,0 @@
-C:/Users/Egr Gul/Desktop/pro genuis/progenuisadmin/android/app/.cxx/Debug/636424o3/x86_64/CMakeFiles/edit_cache.dir
-C:/Users/Egr Gul/Desktop/pro genuis/progenuisadmin/android/app/.cxx/Debug/636424o3/x86_64/CMakeFiles/rebuild_cache.dir
